@@ -32,7 +32,7 @@ int isEmpty(stack *s)
     
 }
 
-// Chicking if stack is full or not (Overflow)
+// Checking if stack is full or not (Overflow)
 int isFull(stack *s)
 {
     if (s->top == max-1)
@@ -62,7 +62,7 @@ void push(stack *s, int item)
     }
 }
 
-// Removing an element from the stack
+// Removing elements from the stack
 void pop(stack *s)
 {
     if (isEmpty(s))
