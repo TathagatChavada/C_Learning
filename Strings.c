@@ -31,19 +31,24 @@ int main() {
 
     char name[30];
     printf("Enter your name: ");
-    scanf("%s", name);
+    fgets(name, sizeof(name), stdin);
 
-    if (strcmp(name, "John") == 0)
-    {
-        printf("Login Successfull");
-        printf("User Name is: %s", name);
-    }
 
-    else
-    {
-        printf("Name is Incorrect.");
-    }
+
+    // if (strcmp(name, "John") == 0)
+    // {
+    //     printf("Login Successfull");
+    //     printf("\n");
+    //     printf("User Name is: %s", name);
+    // }
+
+    // else
+    // {
+    //     printf("Name is Incorrect.");
+    // }
     
+
+    puts(name);
 
 
     return 0;
