@@ -22,10 +22,10 @@ int main()
     int y[4], i;
 
     for (i = 0; i<4; i++){
-        printf("&y[%d] = %p\n", i, y+i);
+        printf("&y[%d] = %d\n", i, y+i);
     }
 
-    printf("Address of array y is: %p",y);
+    printf("Address of array y is: %d",y);
 
     return 0;
 }
