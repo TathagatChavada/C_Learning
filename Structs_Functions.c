@@ -7,7 +7,12 @@ typedef struct
     int age;
 } student;
 
-void displayData(student s);
+void displayData(student s)
+{
+    printf("Name of student is: %s", s.name);
+    printf("\n");
+    printf("Name of student is: %d", s.age);
+}
 
 int main()
 {
@@ -24,9 +29,3 @@ int main()
     return 0;
 }
 
-void displayData(student s)
-{
-    printf("Name of student is: %s", s.name);
-    printf("\n");
-    printf("Name of student is: %d", s.age);
-}
